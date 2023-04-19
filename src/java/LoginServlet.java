@@ -8,16 +8,16 @@ import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
-    @Override
     protected void doGet (HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        PrintWriter writer = response.getWriter();
        String user = request.getParameter("user");
        String pass = request.getParameter("pass");
-       if (user.equals("Georgiev") && pass.equals("1255"))
-       writer.println("Successful login");
-       
-    } else {
-    writer.println("Failed");
+       if (user.equals("Georgiev") && pass.equals("1255")){
+       writer.println("Successful login");  
+       } else {
+       writer.println("Failed");
+       }
+    }
 }
-}
+
