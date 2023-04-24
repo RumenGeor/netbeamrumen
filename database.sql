@@ -1,2 +1,10 @@
 DROP DATABASE IF EXISTS cars;
 CREATE DATABASE cars;
+USE cars;
+CREATE TABLE potrebiteli(id int, name varchar(255), mail varchar(255), pass varchar(255));
+INSERT INTO potrebiteli VALUES(1, "Ivan Dizela", "Lebed@gmail.com","1234555");
+INSERT INTO potrebiteli VALUES(2, "Milko Gradusa", "Tava@gmail.com","2234555");
+INSERT INTO potrebiteli VALUES(2, "Malin", "Tava@gmail.com","2234555");
+CREATE TABLE artikuli(id int, vid varchar(255),name varchar(255), cena int);
+INSERT INTO artikuli VALUES(1, "zimni", "gumi", 500);
+INSERT INTO artikuli VALUES(2, "letni", "gumi", 500);
